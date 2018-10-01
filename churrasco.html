@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<input/>
+<button>Compare com o meu segredo</button>
+
+
+<script>
+
+function pulaLinha() {
+    document.write("<br><hr><br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function calcularCarne(){
+    quantidadeCarne = nPessoas * 150
+    return quantidadeCarne
+}
+
+function calcularFrango(){
+    quantidadeFrango = nPessoas * 100;
+    return quantidadeFrango;
+}
+
+function calcularCerveja(){
+    quantidadeCerveja = nPessoas * 600
+    return quantidadeCerveja    
+}
+
+var nPessoas = prompt("Quantas pessoas")
+nPessoas = parseFloat(nPessoas)
+
+mostra("Você precisará de " + calcularCarne() + "gramas de Carne Vermelha" )
+mostra("Você precisará de" + calcularFrango() + "gramas de Frango")
+mostra("Você precisará de" + calcularCerveja() + "litros de Cerveja")
+
+
+
+
+</script>
